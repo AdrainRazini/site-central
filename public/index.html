@@ -244,11 +244,25 @@ h2 {
 }
 
    
-   
+
 
 </style>
 
-<body>
+<body> <header>
+        <nav>
+            <div class="logo">Name</div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a  href="#home">Home</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><i class="modo-escuro fas fa-moon" onclick="toggleModo()"></i></li>
+            </ul>
+        </nav>
+    </header>
     <header>
         <nav class="menu">
             <ul>
