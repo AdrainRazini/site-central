@@ -819,20 +819,19 @@ max-height: 50%;
     padding: 10px;
     width: 150px;
     height: 50px;
+    background-color: #3a3a3a; /* Cor cinza padrão */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Cores específicas */
-.cubhd.html { background-color: #E34F26; }
-.cubhd.css { background-color: #1572B6; }
-.cubhd.js { background-color: #F7DF1E; color: black; }
-.cubhd.node { background-color: #68A063; }
+/* Efeito Hover - Sombras coloridas aparecem */
+.cubhd.html:hover { box-shadow: 0 0 15px #E34F26; } /* HTML - Laranja */
+.cubhd.css:hover { box-shadow: 0 0 15px #1572B6; }  /* CSS - Azul */
+.cubhd.js:hover { box-shadow: 0 0 15px #F7DF1E; }   /* JavaScript - Amarelo */
+.cubhd.node:hover { box-shadow: 0 0 15px #68A063; } /* Node.js - Verde */
 
-/* Efeito Hover */
 .cubhd:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .box {
