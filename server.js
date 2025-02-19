@@ -1,17 +1,45 @@
+// server.js
 const express = require('express');
-const path = require('path');
-
+const http = require('http');
+const socketIo = require('socket.io');
 const app = express();
-const PORT = process.env.PORT || 3000;
+const server = http.createServer(app);
+const io = socketIo(server);
 
-// Esse aqui é o nosso Servidor para o site"
-app.use(express.static(path.join(__dirname, 'public')));
+const users = {}; // Armazena usuários logados
 
-// Rota para página inicial ele faz nossa pasta publica aparecer no Google
+// Configura a pasta pública para servir os arquivos HTML, CSS e JS
+app.use(express.static('public'));
+
+// Rota principal
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(__dirname + '/public/index.html');
 });
-//Esse é o http do nosso site para deixar em um repositorio
-app.listen(PORT, () => {
-    console.log(`Servidor rodando em http://localhost:${PORT}`);
+
+// Evento de conexão do Socket.IO
+io.on('connection', (socket) => {
+  // Adiciona o usuário quando ele entra no chat
+  socket.on('login', (username) => {
+    users[socket.id] = username;
+    socket.emit('loginSuccess', username);
+    io.emit('userConnected', username);
+  });
+
+  // Lida com mensagens de chat
+  socket.on('chatMessage', (msg) => {
+    const username = users[socket.id];
+    io.emit('message', { user: username, text: msg });
+  });
+
+  // Remove o usuário quando ele desconecta
+  socket.on('disconnect', () => {
+    const username = users[socket.id];
+    delete users[socket.id];
+    io.emit('userDisconnected', username);
+  });
+});
+
+// Inicia o servidor
+server.listen(3000, () => {
+  console.log('Servidor rodando em http://localhost:3000');
 });
