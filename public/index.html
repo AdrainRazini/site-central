@@ -1,25 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Central de Projetos</title>
+    <title>Central</title>
+    
     <link rel="shortcut icon" href="image/favicom/logo.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+ 
 </head>
 <body> 
-    <script src="js/script.js"></script>
+    
     <header>
         <nav>
-            <div class="logo">Central</div>
+            <div class="logo">Name</div>
             <div class="menu-toggle" onclick="toggleMenu()">
                 <i class="fas fa-bars"></i>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+                <li><a  href="#home">Home</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#contato">Contato</a></li>
@@ -40,23 +44,48 @@
                 <a href="#" class="btn" data-aos="zoom-in"><i class="fas fa-globe"></i> Site 5</a>
             </div>
         </section>
-        
         <section class="about" data-aos="fade-left">
             <h2><i class="fas fa-info-circle"></i> Sobre Nós</h2>
             <p>Somos um grupo dedicado a criar projetos inovadores e acessíveis a todos.</p>
         </section>
-        
         <section class="team" data-aos="fade-right">
             <h2><i class="fas fa-users"></i> Nossa Equipe</h2>
-            <div class="team-members">
-                <img src="image/team1.jpg" alt="Membro 1">
-                <img src="image/team2.jpg" alt="Membro 2">
-                <img src="image/team3.jpg" alt="Membro 3">
-            </div>
+            <img src="image/team1.jpg" alt="Membro 1">
+            <img src="image/team2.jpg" alt="Membro 2">
+            <img src="image/team3.jpg" alt="Membro 3">
         </section>
     </main>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    
+    <script>
+ AOS.init();
+        function toggleModo() {
+            document.body.classList.toggle("dark-mode");
+            let icon = document.querySelector(".modo-escuro");
+            icon.classList.toggle("fa-sun");
+            icon.classList.toggle("fa-moon");
+        }
+        function openModal(title, description, img, link) {
+    document.getElementById("modal-title").innerText = title;
+    document.getElementById("modal-description").innerText = description;
+    document.getElementById("modal-img").src = img; // Corrigido 'srl' para 'src'
+    document.getElementById("modal-link").href = link; // Corrigido o erro no href
+    document.getElementById("modal").style.display = "flex";
+}
+
+
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+
+        function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+}
+
+
+        AOS.init();
+        gsap.from(".menu ul li", { opacity: 0, y: -50, duration: 1, stagger: 0.2 });
+        gsap.from(".btn", { opacity: 0, scale: 0.5, duration: 1, stagger: 0.3 });
+    </script>
 </body>
 </html>
