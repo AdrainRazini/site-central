@@ -10,77 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <style>
-        body {
-            background: linear-gradient(45deg, #1e3c72, #2a5298);
-            background-size: 400% 400%;
-            animation: backgroundAnimation 10s infinite alternate;
-            color: white;
-            text-align: center;
-            font-family: 'Poppins', sans-serif;
-        }
-        @keyframes backgroundAnimation {
-            0% { background-position: 0% 50%; }
-            100% { background-position: 100% 50%; }
-        }
-        .menu ul {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 15px;
-            list-style: none;
-        }
-        .menu ul li a {
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
-            font-weight: bold;
-            transition: 0.4s ease-in-out;
-        }
-        .menu ul li a:hover {
-            color: #ff6600;
-            transform: scale(1.1);
-        }
-        .btn {
-            display: inline-block;
-            padding: 15px 25px;
-            margin: 10px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 10px;
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-        .btn::before {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.4);
-            left: -100%;
-            top: 0;
-            transition: 0.4s;
-        }
-        .btn:hover::before {
-            left: 0;
-        }
-        .btn:hover {
-            transform: scale(1.1);
-        }
-        .about, .team {
-            padding: 50px 20px;
-        }
-        .team img {
-            width: 150px;
-            border-radius: 50%;
-            margin: 10px;
-        }
-    </style>
+ 
 </head>
 <body>
     <header>
