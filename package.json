@@ -1,5 +1,5 @@
 {
-    "name": "server-public",
+    "name": "site-central",
     "version": "1.0.0",
     "description": "Servidor Express para servir arquivos estáticos da pasta public",
     "main": "server.js",
