@@ -23,9 +23,10 @@
                 <i class="fas fa-bars"></i>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#home"><i class="fas fa-home"></i> Início</li>
+                <li><a href="#projetos"><i class="fas fa-folder-open"></i> Projetos</li>
+                <li><a href="#sobre"><i class="fas fa-info-circle"></i> Sobre</li>
+                    <li><i class="fas fa-users"></i> Equipe</li>
                 <li><a href="#contato">Contato</a></li>
                 <li><i class="modo-escuro fas fa-moon" onclick="toggleModo()"></i></li>
             </ul>
@@ -33,6 +34,9 @@
     </header>
 
     <main>
+
+<div class="conteiner">
+
         <!-- Seção Principal -->
         <div class="container" id="home">
             <h1 class="animate__animated animate__fadeInDown">Bem-vindo ao Nosso Site!</h1>
@@ -65,6 +69,13 @@
             </div>
         </section>
         
+        <section class="team" data-aos="fade-right">
+            <h2><i class="fas fa-users"></i> Nossa Equipe</h2>
+            <img src="https://adrian-razini.netlify.app/image/anonimo.png" alt="Membro 1">
+            <img src="https://adrian-razini.netlify.app/image/anonimo.png" alt="Membro 2">
+            <img src="https://adrian-razini.netlify.app/image/anonimo.png" alt="Membro 3">
+        </section>
+
         <!-- Contato -->
         <section class="contact" id="contato" data-aos="fade-up">
             <h2><i class="fas fa-envelope"></i> Fale Conosco</h2>
@@ -83,6 +94,7 @@
             <a class="box-inf" id="modal-link" href="#" target="_blank"><i class="fas fa-search"></i> Acessar Projeto</a>
         </div>
     </div>
+</div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
