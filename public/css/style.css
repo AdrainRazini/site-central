@@ -825,10 +825,10 @@ max-height: 50%;
 }
 
 /* Efeito Hover - Sombras coloridas aparecem */
-.cubhd.html:hover { box-shadow: 0 0 30px #ff3700; } /* HTML - Laranja */
-.cubhd.css:hover { box-shadow: 0 0 30px #0095ff; }  /* CSS - Azul */
-.cubhd.js:hover { box-shadow: 0 0 30px #ffe100; }   /* JavaScript - Amarelo */
-.cubhd.node:hover { box-shadow: 0 0 30px #15ff00; } /* Node.js - Verde */
+.cubhd.html:hover { box-shadow: 0 6px 30px #ff3700; } /* HTML - Laranja */
+.cubhd.css:hover { box-shadow: 0 6px 30px #0095ff; }  /* CSS - Azul */
+.cubhd.js:hover { box-shadow: 0 6px 30px #ffe100; }   /* JavaScript - Amarelo */
+.cubhd.node:hover { box-shadow: 0 6px 30px #15ff00; } /* Node.js - Verde */
 
 .cubhd:hover {
     transform: translateY(-5px);
