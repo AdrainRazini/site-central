@@ -1,17 +1,17 @@
 const express = require('express');
-const app = express();
 const path = require('path');
 
-const PORT = process.env.PORT || 10000;
+const app = express();
+const PORT = process.env.PORT || 3000;
 
-// Configurar pasta public
+// Esse aqui é o nosso Servidor para o site"
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Servir index.html
+// Rota para página inicial ele faz nossa pasta publica aparecer no Google
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
-
+//Esse é o http do nosso site para deixar em um repositorio
 app.listen(PORT, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
