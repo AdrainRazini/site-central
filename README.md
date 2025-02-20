@@ -50,4 +50,3 @@ O objetivo do **Site-Central** é criar um portal completo, com funcionalidades 
    git clone https://github.com/seu-usuario/projeto-3b-site-central.git
 
 
-/docs
