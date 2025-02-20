@@ -48,3 +48,6 @@ O objetivo do **Site-Central** é criar um portal completo, com funcionalidades 
 1. **Clone o repositório:**
    ```bash
    git clone https://github.com/seu-usuario/projeto-3b-site-central.git
+
+
+/docs
