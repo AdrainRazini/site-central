@@ -56,9 +56,6 @@ site-central/
 
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** Node.js, Express
-- **Banco de Dados:** [Incluir se houver]
-- **Outras tecnologias:** [Listar outras ferramentas, se houver]
-
 ---
 
 ## ⚙️ Como Contribuir
