@@ -46,6 +46,12 @@ site-central/
 - Garantir a **consistência da identidade visual** e alinhamento com a missão do projeto.
 - Colaboração contínua com o programador para implementar o design de forma eficaz.
 
+### Ruan Gabriel - Informante 📝  
+**Funções:**  
+- Responsável por coletar e organizar informações relevantes para o projeto.  
+- Apoio à equipe com dados e insights importantes.  
+- Comunicação com stakeholders para alinhar expectativas e necessidades.
+
 ### Fulano - Função em Definição 🤷
 **Funções:**
 - Aguardando definição de responsabilidades específicas no projeto.
