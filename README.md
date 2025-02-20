@@ -12,6 +12,24 @@ O objetivo do **Site-Central** é criar um portal completo, com funcionalidades 
 
 ---
 
+## 📂 Estrutura do Projeto
+
+```
+site-central/
+│-- public/
+│   │-- index.html
+│   │-- css/
+│   │-- js/
+│   │-- image/
+│   │   │-- favicon.png
+│   │   │-- icon.png
+│-- readme.md
+│-- package.json
+│-- server.js
+```
+
+---
+
 ## 👥 Equipe
 
 ### Adrian - Programador Web 👨‍💻
@@ -48,5 +66,24 @@ O objetivo do **Site-Central** é criar um portal completo, com funcionalidades 
 1. **Clone o repositório:**
    ```bash
    git clone https://github.com/seu-usuario/projeto-3b-site-central.git
+   ```
+2. **Navegue até o diretório do projeto:**
+   ```bash
+   cd projeto-3b-site-central
+   ```
+3. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
+4. **Inicie o servidor:**
+   ```bash
+   npm start
+   ```
+5. **Faça suas alterações e contribua!**
 
+---
+
+## 📜 Licença
+
+[Adrian Razini Rangel]
 
