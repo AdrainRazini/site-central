@@ -1,6 +1,6 @@
 # Projeto 3B - Site-Central
 
-**URL do site:** [https://site-central.onrender.com/](https://site-central.onrender.com/)
+**URL do site:** [site-centra](https://site-central-xi.vercel.app/)
 
 Bem-vindo ao repositório do **Projeto 3B - Site-Central**! Este projeto é uma iniciativa de nossa equipe para criar uma plataforma intuitiva e funcional. Cada membro tem um papel fundamental para garantir que o site seja desenvolvido com qualidade e eficiência.
 
