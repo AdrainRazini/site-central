@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto</title>
+    <title>Detalhes do Projeto</title>
     
     <link rel="shortcut icon" href="image/favicom/logo.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -11,39 +11,76 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
-
-    <!-- Exemplo de um botão com ícone Font Awesome -->
-    <button class="btn btn-primary animate__animated animate__fadeIn" data-aos="fade-up">
-        <i class="fas fa-check-circle"></i> Confirmar
-    </button>
-
-    <!-- Exemplo de uma seção com animação AOS -->
-    <section class="section" data-aos="zoom-in">
-        <h2 class="section-title">Bem-vindo ao Projeto</h2>
-        <p class="section-description">Este é um exemplo de como usar diferentes bibliotecas para animar e estilizar sua página.</p>
-    </section>
-
-    <!-- Exemplo de animação com GSAP -->
-    <div class="gsap-animation" style="width: 100px; height: 100px; background-color: #3498db;">
-        <p>Movendo com GSAP</p>
-    </div>
-
-    <!-- Adicionando um ícone de redes sociais com Font Awesome -->
-    <div class="social-icons">
-        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-    </div>
-
-    <!-- Exemplo de uma caixa de entrada com efeito de foco -->
-    <input type="text" class="input-field" placeholder="Digite seu nome...">
     
+    <header>
+        <nav>
+            <div class="logo">Central de Projetos</div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="index.html#sobre"><i class="fas fa-info-circle"></i> Sobre</a></li>
+                <li><a href="index.html#projetos"><i class="fas fa-folder-open"></i> Projetos</a></li>
+                <li><a href="index.html#equipe"><i class="fas fa-users"></i> Equipe</a></li>
+                <li><a href="index.html#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+                <li><i class="modo-escuro fas fa-moon" onclick="toggleModo()"></i></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Detalhes do Projeto -->
+        <section class="project-detail">
+            <h1>Projeto Em Grupo - 3º Ano B</h1>
+            <div class="project-container">
+                <img src="image/projeto1.jpg" alt="Projeto Em Grupo" class="project-img">
+                <div class="project-info">
+                    <h2>Descrição do Projeto</h2>
+                    <p>Este projeto foi desenvolvido como parte do trabalho em grupo da turma 3º Ano B. O objetivo foi criar um site com funcionalidades interativas para mostrar as habilidades adquiridas ao longo do curso.</p>
+                    
+                    <h3>Tecnologias Utilizadas</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Node.js</li>
+                    </ul>
+
+                    <h3>Objetivo do Projeto</h3>
+                    <p>Desenvolver um site interativo que possa ser utilizado como uma plataforma de aprendizagem online para diferentes públicos, mostrando projetos feitos pelos alunos e permitindo a interação entre eles.</p>
+
+                    <h3>Equipe</h3>
+                    <p>A equipe responsável pelo desenvolvimento deste projeto inclui os alunos Adrian Razini, João Silva e Ruan Gabriel.</p>
+
+                    <a href="https://projetofeira.netlify.app" class="btn" target="_blank"><i class="fas fa-link"></i> Acessar o Projeto</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Central de Projetos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        // Exemplo de animação com GSAP
-        gsap.to(".gsap-animation", { rotation: 360, duration: 2 });
+        AOS.init();
+
+        function toggleModo() {
+            document.body.classList.toggle("dark-mode");
+            let icon = document.querySelector(".modo-escuro");
+            icon.classList.toggle("fa-sun");
+            icon.classList.toggle("fa-moon");
+        }
+
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
     </script>
 </body>
 </html>
