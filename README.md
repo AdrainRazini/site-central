@@ -74,7 +74,7 @@ site-central/
 
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/seu-usuario/projeto-3b-site-central.git
+   git clone https://github.com/AdrainRazini/site-central.git
    ```
 2. **Navegue até o diretório do projeto:**
    ```bash
