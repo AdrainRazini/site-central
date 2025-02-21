@@ -78,7 +78,7 @@ site-central/
    ```
 2. **Navegue até o diretório do projeto:**
    ```bash
-   cd projeto-3b-site-central
+   cd site-central
    ```
 3. **Instale as dependências:**
    ```bash
