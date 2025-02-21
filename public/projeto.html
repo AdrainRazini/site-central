@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalhes do Projeto</title>
+    <title>Central de Música</title>
     
     <link rel="shortcut icon" href="image/favicom/logo.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -16,22 +16,30 @@
     
     <header>
         <nav>
-            <div class="logo">Central de Projetos</div>
+            <div class="logo">Central de Música</div>
             <div class="menu-toggle" onclick="toggleMenu()">
                 <i class="fas fa-bars"></i>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
-                <li><a href="index.html#sobre"><i class="fas fa-info-circle"></i> Sobre</a></li>
-                <li><a href="index.html#projetos"><i class="fas fa-folder-open"></i> Projetos</a></li>
-                <li><a href="index.html#equipe"><i class="fas fa-users"></i> Equipe</a></li>
-                <li><a href="index.html#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+                <li><a href="#musicas"><i class="fas fa-music"></i> Músicas</a></li>
+                <li><a href="#sobre"><i class="fas fa-info-circle"></i> Sobre</a></li>
+                <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
                 <li><i class="modo-escuro fas fa-moon" onclick="toggleModo()"></i></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <section id="musicas">
+            <h2>Ouça Agora</h2>
+            <div class="player">
+                <audio id="audio-player" src="music/sample.mp3"></audio>
+                <button onclick="playPause()"><i class="fas fa-play" id="play-icon"></i></button>
+                <input type="range" id="volume" min="0" max="1" step="0.1" onchange="adjustVolume(this.value)">
+            </div>
+        </section>
+    </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
@@ -46,6 +54,22 @@
 
         function toggleMenu() {
             document.querySelector(".nav-links").classList.toggle("active");
+        }
+
+        function playPause() {
+            let audio = document.getElementById("audio-player");
+            let icon = document.getElementById("play-icon");
+            if (audio.paused) {
+                audio.play();
+                icon.classList.replace("fa-play", "fa-pause");
+            } else {
+                audio.pause();
+                icon.classList.replace("fa-pause", "fa-play");
+            }
+        }
+
+        function adjustVolume(value) {
+            document.getElementById("audio-player").volume = value;
         }
     </script>
 </body>
