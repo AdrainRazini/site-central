@@ -18,6 +18,7 @@ O objetivo do **Site-Central** é criar um portal completo, com funcionalidades 
 site-central/
 │-- public/
 │   │-- index.html
+│   │-- projeto.html
 │   │-- css/
 │   │-- js/
 │   │-- image/
