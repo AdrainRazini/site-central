@@ -207,8 +207,8 @@ animation: zoomIn 1s ease;
 background-color: #666;
 }
 
-.cubhd-lua {
-background-color: #022e8d;
+.cubhd:hover {
+    cursor: pointer;
 }
 
 
