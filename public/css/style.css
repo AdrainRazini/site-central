@@ -444,7 +444,7 @@ max-height: 50%;
 
 }  
 .imgcub {
-   width: 100px;
+    width: 100px;
     height: 100px;
     border-radius: 50%;
     animation: fadeIn 1.5s ease;
