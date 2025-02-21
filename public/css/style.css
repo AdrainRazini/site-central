@@ -123,7 +123,7 @@ margin-top: 20px;
 
 .social-links a {
 font-size: 2rem;
-color: #333;
+
 transition: color 0.3s ease;
 }
 
@@ -131,9 +131,7 @@ transition: color 0.3s ease;
 color: #0073b1; /* Cor de destaque para hover no LinkedIn */
 }
 
-.social-links a:active {
-color: #333;
-}
+
 
 .projetos {
     display: grid;
