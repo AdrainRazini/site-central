@@ -52,6 +52,12 @@ site-central/
 - Apoio à equipe com dados e insights importantes.  
 - Comunicação com stakeholders para alinhar expectativas e necessidades.
 
+### Mariana - Informante 📝  
+**Funções:**  
+- Responsável por coletar e organizar informações relevantes para o projeto.  
+- Apoio à equipe com dados e insights importantes.  
+- Comunicação com stakeholders para alinhar expectativas e necessidades.
+
 ### Fulano - Função em Definição 🤷
 **Funções:**
 - Aguardando definição de responsabilidades específicas no projeto.
