@@ -45,7 +45,7 @@ site-central/
 - Criação e manutenção do **design visual** do site.
 - Desenvolvimento de **wireframes**, **protótipos** e a arquitetura visual.
 - Garantir a **consistência da identidade visual** e alinhamento com a missão do projeto.
-- Colaboração contínua com o programador para implementar o design de forma eficaz.
+- Colaboração contínua com o programador para implementar o design de forma eficaz..
 
 ### Ruan Gabriel - Informante 📝  
 **Funções:**  
