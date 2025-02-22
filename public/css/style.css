@@ -1,5 +1,77 @@
 
+/*Secao Home */ /*Secao Home */ /*Secao Home */ /*Secao Home */ /*Secao Home */
 
+
+
+/*Area do sitemas usados*/
+
+.box-hd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .box-hd:hover {
+    border: solid solid;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgb(0, 26, 255);
+    
+    } 
+
+.cubhd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: #3a3a3a; /* Cor cinza padrão */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cubhd, .cubhd-lua {
+    display: flex;
+    align-items: center; /* Alinha o texto e o ícone verticalmente */
+    justify-content: center; /* Centraliza conteúdo horizontalmente */
+    color: #ddd;
+    border: solid black 1px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    flex: 1 1 200px;
+    animation: zoomIn 1s ease;
+    
+    }
+    
+    .cubhd {
+    background-color: #666;
+    }
+    
+
+
+/* Efeito Hover - Sombras coloridas aparecem */
+.cubhd.html:hover { box-shadow: 0 6px 30px #ff3700; } /* HTML - Laranja */
+.cubhd.css:hover { box-shadow: 0 6px 30px #0095ff; }  /* CSS - Azul */
+.cubhd.js:hover { box-shadow: 0 6px 30px #ffe100; }   /* JavaScript - Amarelo */
+.cubhd.node:hover { box-shadow: 0 6px 30px #15ff00; } /* Node.js - Verde */
+
+.cubhd:hover {
+    transform: translateY(-5px);
+}
+
+/*--------------------------------------------------------------------------------------*/
 
 
 
@@ -16,12 +88,14 @@
     --box-bg: white;
     --header-bg: #222;
 }
+
 body.dark-mode {
     --bg-color: #121212;
     --text-color: #fff;
     --box-bg: #1e1e1e;
     --header-bg: #000;
 }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -30,7 +104,6 @@ body {
     color: var(--text-color);
     transition: 0.3s;
 }
-
 
 header {
 background: var(--header-bg);
@@ -46,7 +119,11 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 }
+/*--------------------------------------------------------------------------------------*/
 
+
+
+/*Seção Sobre*/
 .logo {
 font-size: 20px;
 font-weight: bold;
@@ -84,6 +161,8 @@ h2 {
 font-size: 2em;
 margin-bottom: 20px;
 }
+/*--------------------------------------------------------------------------------------*/
+
 
 .social-links {
 display: flex;
@@ -101,6 +180,9 @@ transition: color 0.3s ease;
 .social-links a:hover {
 color: #0073b1; /* Cor de destaque para hover no LinkedIn */
 }
+/*--------------------------------------------------------------------------------------*/
+
+
 
 /* projetos */
 
@@ -115,6 +197,12 @@ color: #0073b1; /* Cor de destaque para hover no LinkedIn */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.projeto {
+    background-color: #f9f9f91c;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
 }
 .projeto button {
     background: #007bff;
@@ -159,45 +247,10 @@ color: #0073b1; /* Cor de destaque para hover no LinkedIn */
     font-size: 24px;
     cursor: pointer;
 }
-
-.cubhd, .cubhd-lua {
-display: flex;
-align-items: center; /* Alinha o texto e o ícone verticalmente */
-justify-content: center; /* Centraliza conteúdo horizontalmente */
-color: #ddd;
-border: solid black 1px;
-border-radius: 10px;
-padding: 10px;
-text-align: center;
-flex: 1 1 200px;
-animation: zoomIn 1s ease;
-
-}
-
-.cubhd {
-background-color: #666;
-}
+/*--------------------------------------------------------------------------------------*/
 
 
 
-.box-hd {
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 18px;
-font-weight: bold;
-border-radius: 8px;
-cursor: pointer;
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.box-hd:hover {
-border: solid solid;
-transform: translateY(-5px);
-box-shadow: 0 6px 12px rgb(0, 26, 255);
-
-}
 
 .icon-hd:hover {
 box-shadow: 0 6px 12px rgb(0, 170, 255);
@@ -212,14 +265,6 @@ section {
     padding: 50px 20px;
 }
 
-
-
-.projeto {
-    background-color: #f9f9f91c;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-    padding: 20px;
-}
 
 /* Formulário */
 form {
@@ -553,55 +598,44 @@ max-height: 50%;
     transform: scale(1.2);
 }
 
-/* Modelos para Botoes */
+
+
+
+
+/* Modelos para Botoes */ /* Modelos para Botoes */ /* Modelos para Botoes */ /* Modelos para Botoes */ /* Modelos para Botoes */ /* Modelos para Botoes */
 
 .btn1 { background-color: transparent; color: black; border: 2px solid #ffc107; }
 .btn1:hover { background-color: #ffc107; color: white; }
-
 .btn2 { background-color: #007bff; color: white; }
 .btn2:hover { box-shadow: 0px 0px 15px #007bff; }
-
 .btn3 { background-color: #28a745; color: white; }
 .btn3:hover { transform: scale(1.1); }
-
 .btn4 { background-color: white; color: black; border: 2px solid transparent; }
 .btn4:hover { border: 2px solid #dc3545; }
-
 .btn5 { background: linear-gradient(45deg, #ff416c, #ff4b2b); color: white; }
 .btn5:hover { background: linear-gradient(45deg, #ff4b2b, #ff416c); }
-
 .btn6 { background-color: #17a2b8; color: white; animation: pulse 2s infinite; }
-
 .btn7 { background-color: #6610f2; color: white; }
 .btn7:hover { box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); transform: translateY(-5px); }
-
 .btn8 { background-color: black; color: white; border: 2px solid white; position: relative; overflow: hidden; }
 .btn8::after { content: ""; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.2); transition: left 0.5s ease-in-out; }
 .btn8:hover::after { left: 100%; }
-
 .btn9 { background-color: #e83e8c; color: white; }
 .btn9 span { transition: transform 0.3s ease-in-out; }
 .btn9:hover span { transform: translateY(-5px); }
-
 .btn10 { background: transparent; color: #28a745; border: 2px solid #28a745; overflow: hidden; position: relative; }
 .btn10::before { content: ""; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: #28a745; transition: left 0.3s ease-in-out; }
 .btn10:hover::before { left: 0; }
 .btn10:hover { color: white; }
-
 /* Botões com Ícones */
-
 .btn11 { background-color: #ff5722; color: white; }
 .btn11:hover { transform: scale(1.1); }
-
 .btn12 { background-color: #009688; color: white; }
 .btn12:hover { background-color: #00796b; }
-
 .btn13 { background-color: #673ab7; color: white; }
 .btn13:hover { box-shadow: 0px 0px 15px #673ab7; }
-
 .btn14 { background-color: #f44336; color: white; }
 .btn14:hover { transform: rotate(10deg); }
-
 .btn15 { background-color: #2196f3; color: white; }
 .btn15:hover { background: linear-gradient(45deg, #2196f3, #42a5f5); }
 
@@ -609,7 +643,7 @@ max-height: 50%;
 
 
 
-/* Discord Seção */
+/* Discord Seção */ /* Discord Seção */ /* Discord Seção */ /* Discord Seção */
 
 .discord-widget {
     display: flex;
@@ -680,32 +714,6 @@ max-height: 50%;
 
 
 
-.cubhd {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    color: white;
-    padding: 10px;
-    width: 150px;
-    height: 50px;
-    background-color: #3a3a3a; /* Cor cinza padrão */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-/* Efeito Hover - Sombras coloridas aparecem */
-.cubhd.html:hover { box-shadow: 0 6px 30px #ff3700; } /* HTML - Laranja */
-.cubhd.css:hover { box-shadow: 0 6px 30px #0095ff; }  /* CSS - Azul */
-.cubhd.js:hover { box-shadow: 0 6px 30px #ffe100; }   /* JavaScript - Amarelo */
-.cubhd.node:hover { box-shadow: 0 6px 30px #15ff00; } /* Node.js - Verde */
-
-.cubhd:hover {
-    transform: translateY(-5px);
-}
 
 .box {
     display: flex;
