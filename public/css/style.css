@@ -32,9 +32,6 @@ body {
 }
 
 
-
-
-
 header {
 background: var(--header-bg);
 color: white;
@@ -76,32 +73,6 @@ font-size: 18px;
 display: none;
 font-size: 24px;
 cursor: pointer;
-}
-
-@media screen and (max-width: 768px) {
-.menu-toggle {
-display: block;
-}
-
-.nav-links {
-display: none;
-flex-direction: column;
-position: absolute;
-top: 60px;
-left: 0;
-background: var(--header-bg);
-width: 100%;
-text-align: center;
-padding: 10px;
-}
-
-.nav-links.active {
-display: flex;
-}
-
-.nav-links li {
-margin: 10px 0;
-}
 }
 
 .container {
@@ -376,30 +347,6 @@ footer {
 @keyframes fadeInUp {
     from { transform: translateY(20px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .header nav ul {
-        flex-direction: column;
-    }
-
-    .intro-text h1 {
-        font-size: 2rem;
-    }
-
-    .intro-text p {
-        font-size: 1rem;
-    }
-
-    .intro-image-mod {
-        width: 20px;
-        height: 20px;
-        border-radius: 5%;
-        margin-bottom: 20px;
-        animation: zoomIn 1s ease;
-    }
-    
 }
 
 /* Cores para links no tema claro e escuro */
@@ -843,4 +790,59 @@ max-height: 50%;
 .box:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Area media */ /* Area media */ /* Area media */ /* Area media */ /* Area media */
+
+/* Nav e Menu  */
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+    display: block;
+    }
+    
+    .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: var(--header-bg);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    }
+    
+    .nav-links.active {
+    display: flex;
+    }
+    
+    .nav-links li {
+    margin: 10px 0;
+    }
+    }
+    
+    /* Responsividade */
+@media (max-width: 768px) {
+    .header nav ul {
+        flex-direction: column;
+    }
+
+    .intro-text h1 {
+        font-size: 2rem;
+    }
+
+    .intro-text p {
+        font-size: 1rem;
+    }
+
+    .intro-image-mod {
+        width: 20px;
+        height: 20px;
+        border-radius: 5%;
+        margin-bottom: 20px;
+        animation: zoomIn 1s ease;
+    }
+    
 }
