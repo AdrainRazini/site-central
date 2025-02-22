@@ -44,13 +44,31 @@ align-items: center;
 }
 /*--------------------------------------------------------------------------------------*/
 
+/* Seção de TEXT */
+
+h1{
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    }
+
+/* Cores para links no tema claro e escuro */
+a {
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #007acc; /* Ou qualquer cor de destaque */
+}
 
 
+/*--------------------------------------------------------------------------------------*/
 
 /*Secao Home */ /*Secao Home */ /*Secao Home */ /*Secao Home */ /*Secao Home */
-
-
-
 /*Area do sitemas usados*/
 
 .box {
@@ -171,11 +189,6 @@ cursor: pointer;
 .container {
 text-align: center;
 padding: 60px 20px;
-}
-
-h2 {
-font-size: 2em;
-margin-bottom: 20px;
 }
 /*--------------------------------------------------------------------------------------*/
 
@@ -385,16 +398,6 @@ footer {
     animation: fadeInUp 1.5s ease forwards;
 }
 
-/* Cores para links no tema claro e escuro */
-a {
-    color: var(--text-color);
-    transition: color 0.3s;
-}
-
-a:hover {
-    color: #007acc; /* Ou qualquer cor de destaque */
-}
-
 /* Estilos do botão no formulário */
 form button {
     color: var(--text-color);
@@ -412,9 +415,6 @@ form button:hover {
 
 .fade-in {
     opacity: 1;
-}
-h1{
-    text-align: center;
 }
 
 .cub {
