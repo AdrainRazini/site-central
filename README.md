@@ -22,8 +22,10 @@ site-central/
 │   │-- css/
 │   │-- js/
 │   │-- image/
-│   │   │-- favicon.png
-│   │   │-- icon.png
+│   │   │-- equipe/
+│   │   │-- favicon/
+│   │   │-- icon/
+│   │   │-- video/
 │-- readme.md
 │-- package.json
 │-- server.js
