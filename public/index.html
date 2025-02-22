@@ -35,211 +35,163 @@
 
     <main>  
 
-<div class="container">
+        <div class="container">
 
-        <!-- Seção Principal -->
-        <div class="container" id="home">
-            <h1 class="animate__animated animate__fadeInDown">Bem-vindo ao Nosso Site!</h1>
-            <p>Explore nossos projetos inovadores e se junte a nós para criar algo incrível!</p>
-            <a href="#projetos" class="btn" id="exploreBtn">Explore os Projetos</a>
+            <!-- Seção Principal -->
+            <div class="home" id="home">
+                <h1 class="animate__animated animate__fadeInDown">Bem-vindo ao Nosso Site!</h1>
+                <p>Explore nossos projetos inovadores e se junte a nós para criar algo incrível!</p>
+                <a href="#projetos" class="btn" id="exploreBtn">Explore os Projetos</a>
+            </div>
+        
+            <!-- Sobre Nós -->
+            <section class="about" id="sobre" data-aos="fade-left">
+                <h2><i class="fas fa-info-circle"></i> Sobre Nós</h2>
+                <p>Este site foi desenvolvido para demonstrar as habilidades e experiências na área da Programação. Desenvolvido pelos alunos do Colégio Etelvina Cordeiro Ribas, da série/turma: 3 ano B. Este site possui diversos outros tópicos/sites que foram desenvolvidos, como site de música, e-book, jogos, etc.</p>
+            </section>
+
+            <h1>Como foi feito</h1>
+            <div class="displayfx" id="Modo">
+                <div class="cubhd html" onclick="openModal('HTML', 'HTML (Hypertext Markup Language) é a linguagem de marcação padrão usada para criar e estruturar conteúdo na web. Ela define a estrutura básica de uma página, incluindo títulos, parágrafos, links e outros elementos.', 'image/icon/html.png', 'projeto.html')">
+                    HTML 
+                    <img src="image/icon/html.png" alt="HTML Icon" class="iconcub">
+                </div>
+                
+                <div class="cubhd css" onclick="openModal('CSS', 'CSS (Cascading Style Sheets) é uma linguagem usada para descrever a aparência de um documento HTML. Ela controla a apresentação de elementos, incluindo cores, fontes, tamanhos e layout.', 'image/icon/css.png', 'projeto.html')">
+                    CSS 
+                    <img src="image/icon/css.png" alt="CSS Icon" class="iconcub">
+                </div>
+                
+                <div class="cubhd js" onclick="openModal('JavaScript', 'JavaScript é uma linguagem de programação usada para criar interatividade nas páginas web. Ela permite a criação de funcionalidades dinâmicas, como validação de formulários e animações.', 'image/icon/javasc.png', 'projeto.html')">
+                    JavaScript 
+                    <img src="image/icon/javasc.png" alt="JavaScript Icon" class="iconcub">
+                </div>
+                
+                <div class="cubhd node" onclick="openModal('Node.js', 'Node.js é um ambiente de execução de JavaScript no lado do servidor. Ele permite que você execute código JavaScript fora do navegador, facilitando a construção de servidores e aplicativos em tempo real.', 'image/icon/Node.png', 'projeto.html')">
+                    Node.js 
+                    <img src="image/icon/Node.png" alt="Node.js Icon" class="iconcub">
+                </div>
+            </div>
+            
+        
+          <!-- Projetos -->
+            <section class="projects" id="projetos" data-aos="fade-up" >
+                <h2><i class="fas fa-project-diagram"></i> Nossos Projetos</h2>
+                <div class="projetos-container">
+                    <div class="projeto" data-aos="zoom-in">
+                        <img src="image/Exemplo G.png" class="imgcub" alt="Projeto Em Grupo 3 Ano B">
+                        <div class="projeto-info">
+                            <h3>Projeto Em Grupo - 3º Ano B</h3>
+                            <p>Desenvolvimento de um site online com funcionalidades interativas.</p>
+                            <p><strong>Tecnologias usadas:</strong> HTML, CSS, JavaScript, Node.js</p>
+                            <button class="btn2" onclick="openModal('Nosso Site', 'Projeto online de um site.', 'image/Exemplo G.png', 'projeto.html')">
+                                <i class="fas fa-info-circle"></i> Ver mais
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <!-- Seção da Equipe -->
+            <section class="team" id="equipe" data-aos="fade-left">
+                <h2><i class="fas fa-users"></i> Nossa Equipe</h2>
+
+                <div class="team-members">
+                    <div class="team-member" data-aos="zoom-in">
+                        <img class="iconcub" src="image/equipe/adrian.png" alt="Adrian Razini">
+                        <h3>Adrian Razini</h3>
+                        <p>Desenvolvedor Full Stack</p>
+                        <button class="btn2" onclick="openModal('Adrian - Programador Web 👨‍💻', 'Desenvolvedor Full Stack. Implementação de novas funcionalidades, ajustes e correções de bugs.', 'image/equipe/adrian.png', 'projeto.html')">
+                            Saiba mais
+                        </button>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/adrian-razini-rangel-07393b2b8/?originalSubdomain=br" aria-label="LinkedIn Adrian Razini Rangel">
+                                <i class="fab fa-linkedin box-hd"></i>
+                            </a>
+                            <a href="https://github.com/AdrainRazini" aria-label="GitHub Adrian Razini">
+                                <i class="fab fa-github box-hd"></i>
+                            </a>
+                            <a href="https://www.instagram.com/adrian75556435/" aria-label="Instagram Adrian Razini">
+                                <i class="fab fa-instagram box-hd"></i>
+                            </a>
+                            <a href="https://api.whatsapp.com/send?phone=554196638056&text=Olá!" aria-label="WhatsApp Adrian Razini">
+                                <i class="fab fa-whatsapp box-hd"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="team-member" data-aos="zoom-in">
+                        <img class="iconcub" src="image/equipe/joao.png" alt="João Silva">
+                        <h3>João Silva</h3>
+                        <p>Designer UI/UX</p>
+                        <button class="btn2" onclick="openModal('João - Designer do Projeto 🎨', 'Criação e manutenção do design visual, desenvolvimento de wireframes e protótipos.', 'image/equipe/joao.png', 'projeto.html')">
+                            Saiba mais
+                        </button>
+                        <div class="social-links">
+                            <a href="" aria-label="LinkedIn João Silva">
+                                <i class="fab fa-linkedin box-hd"></i>
+                            </a>
+                            <a href="https://github.com/joao2703jo" aria-label="GitHub João Silva">
+                                <i class="fab fa-github box-hd"></i>
+                            </a>
+                            <a href="" aria-label="Instagram João Silva">
+                                <i class="fab fa-instagram box-hd"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="team-member" data-aos="zoom-in">
+                        <img class="iconcub" src="image/equipe/ruan.png" alt="Ruan Gabriel">
+                        <h3>Ruan Gabriel C.</h3>
+                        <p>Informante Full Stack</p>
+                        <button class="btn2" onclick="openModal('Ruan - Programador Front-End 💻', 'Programador Front-End. Desenvolvimento das interfaces de usuário e integração com APIs.', 'image/equipe/ruan.png', 'projeto.html')">
+                            Saiba mais
+                        </button>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/ruan-gabriel-672787259/" aria-label="LinkedIn Ruan Gabriel">
+                                <i class="fab fa-linkedin box-hd"></i>
+                            </a>
+                            <a href="https://github.com/Ruan-Gabriel-1708" aria-label="GitHub Ruan Gabriel">
+                                <i class="fab fa-github box-hd"></i>
+                            </a>
+                            <a href="https://www.instagram.com/ruan.gabriel.1708/" aria-label="Instagram Ruan Gabriel">
+                                <i class="fab fa-instagram box-hd"></i>
+                            </a>
+                            <a href="https://api.whatsapp.com/send?phone=5514997078498&text=Olá!" aria-label="WhatsApp Ruan Gabriel">
+                                <i class="fab fa-whatsapp box-hd"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Contato -->
+            <section class="contact" id="contato">
+                <h2><i class="fas fa-envelope"></i> Contato</h2>
+                <p>Entre em contato conosco para mais informações sobre nossos projetos!</p>
+                <div class="contact-form">
+                    <form action="enviar-mensagem.php" method="POST">
+                        <input type="text" name="nome" placeholder="Seu Nome" required>
+                        <input type="email" name="email" placeholder="Seu E-mail" required>
+                        <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+                        <button type="submit" class="btn2">Enviar</button>
+                    </form>
+                </div>
+            </section>
+
         </div>
+    </main>
     
-        <!-- Sobre Nós -->
-        <section class="about" id="sobre" data-aos="fade-left">
-            <h2><i class="fas fa-info-circle"></i> Sobre Nós</h2>
-            <p>Este site foi desenvolvido pará demonstrar as habilidades e experiências na área da Programação. Desenvolvido pelos alunos do Colégio Etelvina Cordeiro Ribas, da série/turma: 3 ano B. Este site possui diversos outros tópicos/sites que forma desenvolvido, como, site de música, e-book, jogos, etc. </p>
-        </section>
+    <footer>
+        <p>&copy; 2025 Central de Projetos - Todos os direitos reservados.</p>
+    </footer>
 
-        <h1>Como foi feito</h1>
-        <div class="displayfx" id="Modo">
-            <div class="cubhd html" onclick="openModal('HTML', 'HTML (Hypertext Markup Language) é a linguagem de marcação padrão usada para criar e estruturar conteúdo na web. Ela define a estrutura básica de uma página, incluindo títulos, parágrafos, links e outros elementos.', 'image/icon/html.png', 'projeto.html')">
-                HTML 
-                <img src="image/icon/html.png" alt="HTML Icon" class="iconcub">
-            </div>
-            
-            <div class="cubhd css" onclick="openModal('CSS', 'CSS (Cascading Style Sheets) é uma linguagem usada para descrever a aparência de um documento HTML. Ela controla a apresentação de elementos, incluindo cores, fontes, tamanhos e layout.', 'image/icon/css.png', 'projeto.html')">
-                CSS 
-                <img src="image/icon/css.png" alt="CSS Icon" class="iconcub">
-            </div>
-            
-            <div class="cubhd js" onclick="openModal('JavaScript', 'JavaScript é uma linguagem de programação usada para criar interatividade nas páginas web. Ela permite a criação de funcionalidades dinâmicas, como validação de formulários e animações.', 'image/icon/javasc.png', 'projeto.html')">
-                JavaScript 
-                <img src="image/icon/javasc.png" alt="JavaScript Icon" class="iconcub">
-            </div>
-            
-            <div class="cubhd node" onclick="openModal('Node.js', 'Node.js é um ambiente de execução de JavaScript no lado do servidor. Ele permite que você execute código JavaScript fora do navegador, facilitando a construção de servidores e aplicativos em tempo real.', 'image/icon/Node.png', 'projeto.html')">
-                Node.js 
-                <img src="image/icon/Node.png" alt="Node.js Icon" class="iconcub">
-            </div>
-        </div>
-        
-        
-      <!-- Projetos -->
-<section class="projects" id="projetos" data-aos="fade-up" >
-    <h2><i class="fas fa-project-diagram"></i> Nossos Projetos</h2>
-    <div class="projetos-container">
-        <div class="projeto" data-aos="zoom-in">
-            <img src="image/Exemplo G.png" class="imgcub" alt="Projeto Em Grupo 3 Ano B">
-            <div class="projeto-info">
-                <h3>Projeto Em Grupo - 3º Ano B</h3>
-                <p>Desenvolvimento de um site online com funcionalidades interativas.</p>
-                <p><strong>Tecnologias usadas:</strong> HTML, CSS, JavaScript, Node.js</p>
-                <button class="btn2" onclick="openModal('Nosso Site', 'Projeto online de um site.', 'image/Exemplo G.png', 'projeto.html')">
-                    <i class="fas fa-info-circle"></i> Ver mais
-                </button>
-            </div>
-        </div>
-    </div>
-</section>
-
-        
-<!-- Seção da Equipe -->
-<section class="team" id="equipe" data-aos="fade-left">
-    <h2><i class="fas fa-users"></i> Nossa Equipe</h2>
-
-    <div class="projetos">
-        <div class="projeto" data-aos="zoom-in">
-            <img class="iconcub" src="image/equipe/adrian.png" alt="Adrian Razini">
-            <h3>Adrian Razini</h3>
-            <p>Desenvolvedor Full Stack</p>
-            <button class="btn2" onclick="openModal('Adrian - Programador Web 👨‍💻', 'Desenvolvedor Full Stack. Implementação de novas funcionalidades, ajustes e correções de bugs.', 'image/equipe/adrian.png', 'projeto.html')">
-                Saiba mais
-            </button>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/adrian-razini-rangel-07393b2b8/?originalSubdomain=br" aria-label="LinkedIn Adrian Razini Rangel">
-                    <i class="fab fa-linkedin box-hd"></i>
-                </a>
-                <a href="https://github.com/AdrainRazini" aria-label="GitHub Adrian Razini">
-                    <i class="fab fa-github box-hd"></i>
-                </a>
-                <a href="https://www.instagram.com/adrian75556435/" aria-label="Instagram Adrian Razini">
-                    <i class="fab fa-instagram box-hd"></i>
-                </a>
-                <a href="https://api.whatsapp.com/send?phone=554196638056&text=Olá!" aria-label="WhatsApp Adrian Razini">
-                    <i class="fab fa-whatsapp box-hd"></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="projeto" data-aos="zoom-in">
-            <img class="iconcub" src="image/equipe/joao.png" alt="João Silva">
-            <h3>João Silva</h3>
-            <p>Designer UI/UX</p>
-            <button class="btn2" onclick="openModal('João - Designer do Projeto 🎨', 'Criação e manutenção do design visual, desenvolvimento de wireframes e protótipos.', 'image/equipe/joao.png', 'projeto.html')">
-                Saiba mais
-            </button>
-            <div class="social-links">
-                <a href="" aria-label="LinkedIn João Silva">
-                    <i class="fab fa-linkedin box-hd"></i>
-                </a>
-                <a href="https://github.com/joao2703jo" aria-label="GitHub João Silva">
-                    <i class="fab fa-github box-hd"></i>
-                </a>
-                <a href="" aria-label="Instagram João Silva">
-                    <i class="fab fa-instagram box-hd"></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="projeto" data-aos="zoom-in">
-            <img class="iconcub" src="image/equipe/ruan.png" alt="Ruan Gabriel">
-            <h3>Ruan Gabriel C.</h3>
-            <p>Informante</p>
-            <button class="btn2" onclick="openModal('Ruan Gabriel - Informante 📝', 'Responsável por coletar e organizar informações relevantes para o projeto.', 'image/equipe/ruan.png', 'projeto.html')">
-                Saiba mais
-            </button>
-            <div class="social-links">
-                <a href="" aria-label="LinkedIn Ruan Gabriel">
-                    <i class="fab fa-linkedin box-hd"></i>
-                </a>
-                <a href="" aria-label="GitHub Ruan Gabriel">
-                    <i class="fab fa-github box-hd"></i>
-                </a>
-                <a href="" aria-label="Instagram Ruan Gabriel">
-                    <i class="fab fa-instagram box-hd"></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="projeto" data-aos="zoom-in">
-            <img class="iconcub" src="image/equipe/mariana.png" alt="Mariana">
-            <h3>Mariana</h3>
-            <p>Informante</p>
-            <button class="btn2" onclick="openModal('Mariana - Informante 📝', 'Responsável por coletar e organizar informações relevantes para o projeto.', 'image/equipe/mariana.png', 'projeto.html')">
-                Saiba mais
-            </button>
-            <div class="social-links">
-                <a href="" aria-label="LinkedIn Mariana">
-                    <i class="fab fa-linkedin box-hd"></i>
-                </a>
-                <a href="" aria-label="GitHub Mariana">
-                    <i class="fab fa-github box-hd"></i>
-                </a>
-                <a href="" aria-label="Instagram Mariana">
-                    <i class="fab fa-instagram box-hd"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!-- Contato -->
-<section class="contact" id="contato" data-aos="fade-up">
-    <h2><i class="fas fa-envelope"></i> Fale Conosco</h2>
-    <p>Tem dúvidas ou sugestões? Envie-nos uma mensagem e responderemos o mais rápido possível!</p>
-    <h1><i class="fas fa-cogs"></i> EM TESTE AINDA</h1>
-    <div class="contact-container">
-        <form action="mailto:adrianrazin60@gmail.com" method="post" enctype="text/plain" class="contact-form">
-            <input type="text" name="name" placeholder="Seu Nome" required>
-            <input type="email" name="email" placeholder="Seu E-mail" required>
-            <textarea name="message" placeholder="Sua Mensagem" required></textarea>
-            <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Enviar Mensagem</button>
-        </form>
-    </div>
-</section>
-
-
-    <!-- Modal de Detalhes do Projeto -->
-    <div class="modal" id="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <img class="imgcub" id="modal-img" src="image/">
-            <h2 id="modal-title">Título do Projeto</h2>
-            <p id="modal-description">Descrição do Projeto</p>
-            <a class="box-inf" id="modal-link" href="#" target="_blank"><i class="fas fa-search"></i> Acessar Projeto</a>
-        </div>
-    </div>
-</div>
-
+    <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init();
-
-        function toggleModo() {
-            document.body.classList.toggle("dark-mode");
-            let icon = document.querySelector(".modo-escuro");
-            icon.classList.toggle("fa-sun");
-            icon.classList.toggle("fa-moon");
-        }
-
-        function openModal(title, description, img, link) {
-            document.getElementById("modal-title").innerText = title;
-            document.getElementById("modal-description").innerText = description;
-            document.getElementById("modal-img").src = img;
-            document.getElementById("modal-link").href = link;
-            document.getElementById("modal").style.display = "flex";
-        }
-
-        function closeModal() {
-            document.getElementById("modal").style.display = "none";
-        }
-
-        function toggleMenu() {
-            document.querySelector(".nav-links").classList.toggle("active");
-        }
-
-        gsap.from(".menu ul li", { opacity: 0, y: -50, duration: 1, stagger: 0.2 });
-        gsap.from(".btn", { opacity: 0, scale: 0.5, duration: 1, stagger: 0.3 });
     </script>
 </body>
 </html>
