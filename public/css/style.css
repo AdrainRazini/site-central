@@ -419,9 +419,7 @@ h1{
 
 .cub {
     text-align: center;
-
-max-height: 50%;
-
+   max-height: 50%;
 }  
 .imgcub {
     width: 100px;
@@ -827,7 +825,7 @@ max-height: 50%;
 
 /* Area media */ /* Area media */ /* Area media */ /* Area media */ /* Area media */
 
-/* Nav e Menu  */
+/* Nav e Menu  */ /*Animação geral do site em mobile*/ /*Animação geral do site em mobile*/
 
 @media screen and (max-width: 768px) {
     .menu-toggle {
@@ -855,7 +853,7 @@ max-height: 50%;
     }
     }
     
-    /* Responsividade */
+    /* Responsividade */  
 @media (max-width: 768px) {
     .header nav ul {
         flex-direction: column;
