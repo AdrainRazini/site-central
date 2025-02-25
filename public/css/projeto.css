@@ -74,6 +74,10 @@ a:hover {
 /* Seção do Container */ /* Seção do Container */ /* Seção do Container */
 
 
+.categoria {
+    padding-top: 75px;
+}
+
 .container{
 
 text-align: center;
