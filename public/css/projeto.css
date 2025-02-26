@@ -56,19 +56,47 @@ nav ul li a {
     padding: 50px 20px;
 }
 
-.card {
-    background-color: #333;
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
     padding: 20px;
-    border-radius: 10px;
-    max-width: 600px;
+}
+
+.card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    color: white;
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .card img {
-    width: 100px;
-    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 10px;
 }
+
+.musica {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+.ebook {
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+}
+
+.jogos {
+    background: linear-gradient(135deg, #8e44ad, #c0392b);
+}
+
 
 .card h2 {
     color: #FFD700;
