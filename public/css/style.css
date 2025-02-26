@@ -267,7 +267,7 @@ color: #0073b1; /* Cor de destaque para hover no LinkedIn */
     padding: 20px;
     border-radius: 10px;
     width: 50%;
-    height: auto;
+    height: 50%;
     text-align: center;
     position: relative;
 }
