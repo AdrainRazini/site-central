@@ -47,11 +47,14 @@
     padding: 20px;
     border-radius: 10px;
     width: 50%;
-    text-align: center;
+    text-align: left;
     color: #fff;
     position: relative;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
     animation: fadeIn 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 @keyframes fadeIn {
@@ -72,10 +75,13 @@
     color: red;
 }
 
-.modal-content img {
-    max-width: 80%;
-    margin-top: 10px;
+.modal-image {
+    max-width: 120px;
     border-radius: 10px;
+}
+
+.modal-text {
+    flex: 1;
 }
 
 .box-inf {
