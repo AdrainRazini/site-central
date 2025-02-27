@@ -842,54 +842,30 @@ form button:hover {
 
 /* Responsividade para Mobile */
 @media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
     .nav-links {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 50px;
-        right: 0;
+        top: 60px;
+        left: 0;
         background: var(--header-bg);
         width: 100%;
         text-align: center;
+        padding: 10px;
     }
 
     .nav-links.active {
         display: flex;
     }
 
-    .menu-toggle {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .menu-toggle {
-    display: block;
-    }
-    
-    .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    background: var(--header-bg);
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    }
-    
-    .nav-links.active {
-    display: flex;
-    }
-    
     .nav-links li {
-    margin: 10px 0;
+        margin: 10px 0;
     }
-    }
-    
-    /* Responsividade */  
-@media (max-width: 768px) {
+
     .header nav ul {
         flex-direction: column;
     }
@@ -909,8 +885,10 @@ form button:hover {
         margin-bottom: 20px;
         animation: zoomIn 1s ease;
     }
-    
 }
+
+    
+
 /*--------------------------------------------------------------------------------------*/
 
 
