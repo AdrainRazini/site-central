@@ -256,6 +256,8 @@ color: #0073b1; /* Cor de destaque para hover no LinkedIn */
 .modo-escuro:hover {
     color: #fbc02d;
 }
+
+
 /* Estilo do Modal */
 #modal {
     display: none;
