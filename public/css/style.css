@@ -526,22 +526,6 @@ form button:hover {
     flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas se necessário */
 }
 
-.displayfx {
-    display: flex;
-    padding-left: 5%;
-    gap: 20px; /* Espaçamento entre os itens */
-    flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas se necessário */
-}
-
-.displayfx {
-    display: flex;
-    padding-left: 5%;
-    gap: 20px; /* Espaçamento entre os itens */
-    flex-wrap: wrap; /* Itens em múltiplas linhas, se necessário */
-}
-
-
-
 
 
 .iconcub {
