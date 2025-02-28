@@ -29,6 +29,16 @@ body {
     transition: 0.3s;
 }
 
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
 /*--------------------------------------------------------------------------------------*/
 
 /* Seção de TEXT */
@@ -340,13 +350,6 @@ form button:hover {
     background-color: #555;
 }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
 
 /* Tela de introdução */
 
