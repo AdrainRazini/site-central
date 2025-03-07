@@ -22,6 +22,7 @@ site-central/
 │   │-- css/
 │   │-- js/
 │   │-- image/
+│   │   │-- Spritesheet 128/
 │   │   │-- equipe/
 │   │   │-- favicon/
 │   │   │-- icon/
