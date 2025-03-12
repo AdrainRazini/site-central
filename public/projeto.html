@@ -19,7 +19,7 @@
     background-image: url(image/fundopreto.jpeg);
 }
 
-    .musica {
+.musica {
     background-image: url(image/musica.jpeg);
 }
 
@@ -31,6 +31,11 @@
     background-image: url(image/pixel.jpeg);
 }
 
+.musica:hover,
+.ebook:hover,
+.jogos:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.705);
+}
 
 /* Estilo do Modal */
 #modal {
@@ -170,20 +175,20 @@
     </section>
     
     <section class="content fundo">
-        <div class="card musica">
-            <img src="image/notamusica.jpeg" alt="Explore Músicas" onclick="openModal('Projeto Música', 'Descubra uma vasta coleção de músicas de diversos gêneros. Nossa plataforma oferece streaming, download e playlists personalizadas para todos os gostos. Aproveite a experiência musical única que preparamos para você.', 'image/notamusica.jpeg', 'https://centraldeprojetos.mystrikingly.com/1', 'image/musica.jpeg')" >
+        <div class="card musica" onclick="openModal('Projeto Música', 'Descubra uma vasta coleção de músicas de diversos gêneros. Nossa plataforma oferece streaming, download e playlists personalizadas para todos os gostos. Aproveite a experiência musical única que preparamos para você.', 'image/notamusica.jpeg', 'https://centraldeprojetos.mystrikingly.com/1', 'image/musica.jpeg')" >
+            <img src="image/notamusica.jpeg" alt="Explore Músicas" >
             <h2>Explore Músicas</h2>
             <p>Descubra uma vasta coleção de músicas de diversos gêneros. Nossa plataforma oferece streaming, download e playlists personalizadas para todos os gostos. Aproveite a experiência musical única que preparamos para você.</p>
         </div>
         
-        <div class="card ebook">
-            <img src="image/livros.jpeg" alt="Mergulhe no E-Book" onclick="openModal('Projeto E-Book', 'Mergulhe em uma biblioteca de e-books que abrange todos os gêneros. Desde ficção até não-ficção, você encontrará títulos que vão enriquecer seu conhecimento e entretenimento. A leitura é uma jornada, e estamos aqui para guiá-lo.', 'image/livros.jpeg', 'https://centraldeprojetos.mystrikingly.com/2', 'image/estudando.jpeg')" >
+        <div class="card ebook"  onclick="openModal('Projeto E-Book', 'Mergulhe em uma biblioteca de e-books que abrange todos os gêneros. Desde ficção até não-ficção, você encontrará títulos que vão enriquecer seu conhecimento e entretenimento. A leitura é uma jornada, e estamos aqui para guiá-lo.', 'image/livros.jpeg', 'https://centraldeprojetos.mystrikingly.com/2', 'image/estudando.jpeg')">
+            <img src="image/livros.jpeg" alt="Mergulhe no E-Book" >
             <h2>leia os E-Books</h2>
             <p>Mergulhe em uma biblioteca de e-books que abrange todos os gêneros. De ficção até não-ficção, você encontrará títulos que vão enriquecer seu conhecimento e entreter. A leitura é uma jornada, e estamos aqui para guiá-lo.</p>
         </div>
         
-        <div class="card jogos">
-            <img src="image/controle.jpeg" alt="Mergulhe nos Jogos"  onclick="openModal('Projeto Jogos', 'Entre em um mundo de diversão com nossos jogos interativos. Com opções para todas as idades, nossos jogos são projetados para entreter e educar ao mesmo tempo. Desafie-se e divirta-se com nossa seleção de jogos.', 'image/controle.jpeg', 'https://centraldeprojetos.mystrikingly.com/3', 'image/pixel.jpeg')" >
+        <div class="card jogos" onclick="openModal('Projeto Jogos', 'Entre em um mundo de diversão com nossos jogos interativos. Com opções para todas as idades, nossos jogos são projetados para entreter e educar ao mesmo tempo. Desafie-se e divirta-se com nossa seleção de jogos.', 'image/controle.jpeg', 'https://centraldeprojetos.mystrikingly.com/3', 'image/pixel.jpeg')">
+            <img src="image/controle.jpeg" alt="Mergulhe nos Jogos"   >
             <h2>Explore Jogos</h2>
             <p>Entre em um mundo de diversão com nossos jogos interativos. Com opções para todas as idades, nossos jogos são projetados para entreter e educar ao mesmo tempo. Desafie-se e divirta-se com nossa seleção de jogos.</p>
         </div>
