@@ -11,7 +11,7 @@ const users = {}; // Armazena usuários logados
 // Configura a pasta pública para servir os arquivos HTML, CSS e JS
 app.use(express.static('public'));
 
-app.use(express.static('Modelo'))
+app.use(express.static('Modelo'));
 
 // Rota principal
 app.get('/', (req, res) => {
