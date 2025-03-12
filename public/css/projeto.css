@@ -64,11 +64,13 @@ nav ul li a {
     text-align: center;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
-
-.card  {
+.card{
+    cursor: pointer;
+}
+.card img {
     width: 100px;
     margin-bottom: 15px;
-    cursor: pointer;
+   
 }
 
 .card h2 {
