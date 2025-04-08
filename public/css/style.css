@@ -162,59 +162,102 @@ a:hover {
 
 /*--------------------------------------------------------------------------------------*/
 
-
+/* HEADER e NAV */
 header {
     background: var(--header-bg);
     color: white;
     padding: 15px 20px;
-    text-align: center;
     position: fixed;
     width: 100%;
-    max-width: 100vw;
-    box-sizing: border-box;
     top: 0;
     left: 0;
     z-index: 1000;
+    box-sizing: border-box;
+  }
+  
+  nav {
     display: flex;
-    justify-content: center; /* <- centraliza conteúdo */
     align-items: center;
-    overflow-x: hidden;
-}
-
-
-/* Estilização da Logo */
-.logo {
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* LOGO */
+  .logo {
     font-size: 20px;
     font-weight: bold;
-    flex: 1;
-    text-align: center; /* Centraliza a logo */
-}
-
-/* Estilos da Navegação */
-.nav-links {
+  }
+  
+  /* NAV LINKS DESKTOP */
+  .nav-links {
     list-style: none;
     display: flex;
     gap: 15px;
-    flex: 1;
-    justify-content: flex-end; /* Alinha o menu à direita */
-}
-
-.nav-links li {
+  }
+  
+  .nav-links li {
     display: inline;
-}
-
-.nav-links a {
+  }
+  
+  .nav-links a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-}
-
-/* Menu Mobile */
-.menu-toggle {
+  }
+  
+  .modo-escuro {
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  /* MENU HAMBURGUER */
+  .menu-toggle {
     display: none;
     font-size: 24px;
     cursor: pointer;
-}
+    color: white;
+  }
+  
+ /* RESPONSIVO */
+@media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: var(--header-bg);
+      flex-direction: column;
+      display: none;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      width: 200px;
+  
+      /* CENTRALIZAR OS LINKS */
+      align-items: center;
+      text-align: center;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+      width: 100%;
+    }
+  
+    .nav-links a {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  
 
 .container {
 text-align: center;
@@ -222,6 +265,10 @@ padding: 100px 20px;
 
 
 }
+
+
+
+
 /*--------------------------------------------------------------------------------------*/
 
 /* Social do Nosso Grupo */
@@ -440,23 +487,6 @@ form button:hover {
 
 /* Tela de introdução */
 
-.introdc {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Ocupa a altura total da tela */
-    padding: 20px; /* Espaço interno */
-    background-image: url();
-    background-size: cover;
-    background-position: center;
-    color: var(--text-color, #ffffff); /* Define uma cor padrão caso --text-color não esteja definido */
-    text-align: center;
-    animation: fadeIn 1.5s ease;
-   
-}
-
-
 .intro {
     display: flex;
     flex-direction: column;
@@ -469,19 +499,7 @@ form button:hover {
     text-align: center;
     animation: fadeIn 1.5s ease;
 }
-.intro-mod {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    background-image: url('');
-    background-size: cover;
-    background-position: center;
-    color: var(--text-color);
-    text-align: center;
-    animation: fadeIn 1.5s ease;
-}
+
 .intro-image {
     width: 150px;
     height: 150px;
@@ -532,85 +550,6 @@ form button:hover {
     animation: fadeIn 1.5s ease;
 
 }
-.disp{
-    display: flex;
-}
-
-.delt-img{
-    max-width: 200px; max-height: 100px; display: block; margin: auto;
-    
-
-}
-
-.intro-image-mod {
-    width: 100px;
-    height: 100px;
-    border-radius: 5%;
-    margin-bottom: 20px;
-    animation: zoomIn 1s ease;
-}
-
-
-.intro {
-    text-align: center;
-    padding: 50px 20px;
-   
-}
-
-.intro-image-logo,
-.intro-image-mod {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-
-.intro-text h1 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.intro-text p {
-    font-size: 1.1em;
-    color: #555;
-}
-
-.intro-image-mod-container {
-    padding-top: 50px;
-}
-
-.intro-discord {
-    padding-top: 50px;
-}
-
-.intro-discord h2 {
-    font-size: 1.8em;
-    color: #333;
-    margin-bottom: 5px;
-}
-
-.intro-discord p {
-    font-size: 1em;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.discord-button {
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: #7289DA;
-    color: #fff;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.discord-button:hover {
-    background-color: #5a6fb2;
-}
-
-
-
 
 .iconcub {
     height: 20px;
@@ -737,88 +676,6 @@ form button:hover {
 /*--------------------------------------------------------------------------------------*/
 
 
-
-
-/* Discord Seção */ /* Discord Seção */ /* Discord Seção */ /* Discord Seção */
-
-.discord-widget {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    padding: 20px;
-}
-
-.intro-discord2 {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.intro-discord2 h2 {
-    font-size: 2em;
-    color: #2c2c2c;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.intro-discord2 p {
-    font-size: 1.1em;
-    color: #555;
-    margin-bottom: 25px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.5;
-}
-
-.discord-button2 {
-    display: inline-block;
-    text-decoration: none;
-    padding: 12px 24px;
-    font-weight: bold;
-    font-size: 1.1em;
-    border-radius: 8px;
-    border: 2px solid #2876a7;
-    color: #3d28a7;
-    background: linear-gradient(135deg, #7289DA, #5865F2);
-    overflow: hidden;
-    position: relative;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.discord-button2::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: rgba(40, 129, 167, 0.8);
-    transition: left 0.3s ease-in-out;
-}
-
-.discord-button2:hover::before {
-    left: 0;
-}
-
-.discord-button2:hover {
-    color: white;
-    transform: scale(1.05);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
-}
-
-
-
-/*--------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
 /* Area Key Frames*/ /* Area Key Frames*/ /* Area Key Frames*/ /* Area Key Frames*/ /* Area Key Frames*/
 
 
@@ -898,67 +755,6 @@ form button:hover {
 }
 
 @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
-
-/*--------------------------------------------------------------------------------------*/
-
-
-
-
-
-/* Area media */ /* Area media */ /* Area media */ /* Area media */ /* Area media */
-
-/* Nav e Menu  */ /*Animação geral do site em mobile*/ /*Animação geral do site em mobile*/
-
-
-
-/* Responsividade para Mobile */
-@media screen and (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background: var(--header-bg);
-        width: 100%;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-    }
-
-    .header nav ul {
-        flex-direction: column;
-    }
-
-    .intro-text h1 {
-        font-size: 2rem;
-    }
-
-    .intro-text p {
-        font-size: 1rem;
-    }
-
-    .intro-image-mod {
-        width: 20px;
-        height: 20px;
-        border-radius: 5%;
-        margin-bottom: 20px;
-        animation: zoomIn 1s ease;
-    }
-}
-
-    
 
 /*--------------------------------------------------------------------------------------*/
 
