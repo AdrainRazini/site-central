@@ -29,6 +29,7 @@
     --text-color: #333;
     --box-bg: white;
     --header-bg: #222;
+    --marcador: #000000;
 }
 
 body.dark-mode {
@@ -36,6 +37,7 @@ body.dark-mode {
     --text-color: #fff;
     --box-bg: #1e1e1e;
     --header-bg: #000;
+    --marcador: #ffffff;
 }
 
 
@@ -379,7 +381,7 @@ color: #0073b1; /* Cor de destaque para hover no LinkedIn */
     right: 16px;
     font-size: 28px;
     font-weight: bold;
-    color: #000000;
+    color: var(--marcador);
     cursor: pointer;
     transition: color 0.2s;
 }
